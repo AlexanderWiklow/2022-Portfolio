@@ -1,0 +1,369 @@
+/* ============ LINKS ==============
+
+https://www.theodinproject.com/lessons/node-path-advanced-html-and-css-personal-portfolio 
+https://www.freecodecamp.org/news/html-page-width-height/
+https://github.com/AlexanderWiklow/The-Odin-Project-Landing-Page
+
+*/
+
+/* import font here */
+
+:root {
+  border: 1px solid green;
+  --Pale-blue: hsl(225, 100%, 94%);
+  --Bright-blue: hsl(245, 75%, 52%);
+  --Very-pale-blue: hsl(225, 100%, 98%);
+  --Unsaturated-blue: hsl(224, 23%, 55%);
+  --Dark-blue: hsl(223, 47%, 23%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+body {
+  min-height: 100vh;
+}
+
+#me {
+  max-width: 50%;
+  max-height: auto;
+  min-width: 6rem;
+  box-shadow: rgb(38, 57, 77) 10px 20px 30px -10px;
+}
+
+.header-container {
+  background-color: rgb(91, 116, 228);
+  background: linear-gradient(#e66465, #9198e5);
+  padding: 20px;
+  margin: auto 0;
+}
+
+header {
+  display: flex;
+}
+
+.about-me-image-container {
+  position: relative;
+  text-align: center;
+  color: white;
+  box-shadow: rgb(38, 57, 77) 10px 20px 30px -10px;
+  max-height: 28rem;
+}
+
+#resume-download-btn {
+  height: 2rem;
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  /* padding: 16px 32px; */
+  padding: 0px 10px 0px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-right: 1rem;
+  border-radius: 10px;
+  /* margin: 4px 2px; */
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+#resume-download-btn {
+  background-color: white;
+  color: black;
+  border: 2px solid #555555;
+}
+
+#resume-download-btn:hover {
+  background-color: #555555;
+  color: white;
+}
+
+#resume-download {
+  font-size: 0.8rem;
+  text-decoration: none;
+  color: black;
+}
+.centered {
+  position: absolute;
+  top: 250px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-weight: bolder;
+}
+
+.about-me-container {
+  background-color: white;
+  margin: 2rem 0rem 2rem 0rem;
+  padding: 1.5rem;
+  box-shadow: rgb(38, 57, 77) 10px 20px 30px -10px;
+}
+
+#about-me-paragraph {
+  padding: 1.5rem 0rem 2rem 0rem;
+}
+
+.header-links {
+  display: flex;
+  justify-content: flex-end;
+}
+
+#socials-icon {
+  height: 2rem;
+  padding-right: 1rem;
+}
+
+.main-container {
+  margin: auto 0;
+  padding: 20px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 2rem;
+  /* background-color: #fff; */
+  color: #444;
+  align-items: center;
+  justify-items: center;
+  padding: 20px;
+  overflow: hidden;
+}
+
+.grid-container-1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  color: #444;
+  align-items: center;
+  justify-items: center;
+  padding: 20px;
+  overflow: hidden;
+}
+
+.grid-container-footer {
+  display: grid;
+  grid-template-columns: auto auto;
+  /* grid-gap: 2rem; */
+  /* background-color: #fff; */
+  color: #444;
+  align-items: center;
+  justify-items: center;
+  padding: 20px;
+  overflow: hidden;
+}
+
+/* Ta bort nth-child */
+.grid-container-1 :nth-child(2) {
+  background-color: white;
+}
+
+/* CARD LAYOUT: https://www.w3schools.com/howto/howto_css_cards.asp */
+
+.card {
+  background-color: white;
+  color: black;
+  border-radius: 5px;
+  font-size: 1rem;
+  box-shadow: rgb(38, 57, 77) 10px 20px 30px -10px;
+  transition: 0.3s;
+  height: 15rem;
+  width: 20rem;
+}
+
+.card-1 {
+  border-radius: 5px;
+  box-shadow: rgb(38, 57, 77) 10px 20px 30px -10px;
+  transition: 0.3s;
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.header-pic {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.img-container-1 {
+  height: 25rem;
+}
+
+#header-pic-1 {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+/* Add some padding inside the card container */
+
+#welcome-text-container {
+  padding: 1rem;
+  width: 100%;
+}
+
+.card-text-container {
+  padding: 1rem;
+  width: 100%;
+}
+
+.img-container {
+  height: 9rem;
+  background-color: green;
+}
+
+.project-images {
+  height: 2rem;
+  width: auto;
+  padding-top: 0.5rem;
+}
+
+.header-socials-container {
+  display: flex;
+  justify-content: end;
+  /* width: -6rem; */
+}
+
+.header-socials-img {
+  height: 2rem;
+  padding-right: 1rem;
+  /* background-color: red; */
+}
+
+.my-work-container {
+  display: flex;
+  justify-content: center;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer-container {
+  background: linear-gradient(#c84d4d, #7b83d6);
+  margin: auto 0;
+  color: white;
+}
+
+/* .footer-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+} */
+
+.text {
+  width: 100%;
+  padding: 2rem;
+}
+
+.footer-image-container {
+  display: flex;
+  justify-content: center;
+
+  width: 60%;
+}
+
+.email > img {
+  height: 1rem;
+}
+
+.phone > img {
+  height: 1rem;
+}
+
+#footer-img {
+  margin: 2rem;
+  height: 20rem;
+}
+
+.socials-container {
+  display: flex;
+  margin-top: 1rem;
+}
+
+.footer-socials-image {
+  height: 2rem;
+  padding-right: 1rem;
+}
+
+/* ========================================================== */
+
+@media only screen and (max-width: 600px) {
+  .projects {
+    width: 350px;
+  }
+  .grid-container {
+    grid-template-columns: auto;
+    grid-gap: 10px 10px;
+  }
+  .projectPhotos ._a {
+    width: 300px;
+    height: 100px;
+  }
+}
+
+@media only screen and (max-width: 1600px) {
+  .projects {
+    width: 350px;
+  }
+  .grid-container {
+    grid-template-columns: auto auto;
+    grid-gap: 10px 10px;
+  }
+
+  .grid-container-1 {
+    grid-template-columns: auto auto;
+    grid-gap: 10px 10px;
+  }
+
+  .card {
+    margin-bottom: 2rem;
+  }
+  .projectPhotos ._a {
+    width: 300px;
+    height: 100px;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  .projects {
+    width: 350px;
+  }
+  .grid-container {
+    grid-template-columns: auto;
+    grid-gap: 10px 10px;
+  }
+
+  .grid-container-1 {
+    grid-template-columns: auto;
+    grid-gap: 10px 10px;
+  }
+
+    .grid-container-footer {
+    grid-template-columns: auto;
+    grid-gap: 10px 10px;
+  }
+
+  .card {
+    margin-bottom: 2rem;
+  }
+
+  .card-1 {
+    margin-top: 1rem;
+  }
+  .projectPhotos ._a {
+    width: 300px;
+    height: 100px;
+  }
+}
