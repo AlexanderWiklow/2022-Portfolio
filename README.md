@@ -1,3 +1,3 @@
 Welcome to my portfolio!
 
-* Work in progress... * 
+"Work in progress..." 
