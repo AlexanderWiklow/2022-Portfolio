@@ -25,6 +25,7 @@ https://github.com/AlexanderWiklow/The-Odin-Project-Landing-Page
 
 html {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+
 }
 
 body {
@@ -39,10 +40,13 @@ body {
 }
 
 .header-container {
+  display: flex;
   background-color: rgb(91, 116, 228);
   background: linear-gradient(#e66465, #9198e5);
   padding: 20px;
-  margin: auto 0;
+  /* margin: auto 0; */
+  justify-content: center;
+
 }
 
 header {
@@ -127,12 +131,12 @@ header {
 
 .grid-container {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 2rem;
+  grid-template-columns: 1fr 1fr auto;
+  /* grid-gap: 2rem; */
   /* background-color: #fff; */
   color: #444;
   align-items: center;
-  justify-items: center;
+  justify-content:space-between;
   padding: 20px;
   overflow: hidden;
 }
@@ -142,9 +146,11 @@ header {
   grid-template-columns: 1fr 1fr;
   color: #444;
   align-items: center;
-  justify-items: center;
+  justify-content: space-between;
   padding: 20px;
   overflow: hidden;
+    max-width: 1900px;
+    gap: 1rem;
 }
 
 .grid-container-footer {
@@ -154,7 +160,7 @@ header {
   /* background-color: #fff; */
   color: #444;
   align-items: center;
-  justify-items: center;
+  justify-content: space-between;
   padding: 20px;
   overflow: hidden;
 }
@@ -192,6 +198,7 @@ header {
   height: 100%;
   width: 100%;
   object-fit: cover;
+  border-radius: 5px;
 }
 
 .img-container-1 {
@@ -199,12 +206,11 @@ header {
 }
 
 #header-pic-1 {
+  border-radius: 5px;
   height: 100%;
   width: 100%;
   object-fit: cover;
 }
-
-/* Add some padding inside the card container */
 
 #welcome-text-container {
   padding: 1rem;
@@ -218,7 +224,6 @@ header {
 
 .img-container {
   height: 9rem;
-  background-color: green;
 }
 
 .project-images {
@@ -264,12 +269,12 @@ header {
 
 .text {
   width: 100%;
-  padding: 2rem;
+  padding: 0.8rem;
 }
 
 .footer-image-container {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
 
   width: 60%;
 }
@@ -283,8 +288,10 @@ header {
 }
 
 #footer-img {
-  margin: 2rem;
-  height: 20rem;
+  /* margin: 2rem; */
+  height: 12rem;
+  padding: 20px;
+  border-radius: 25px;
 }
 
 .socials-container {
@@ -343,11 +350,12 @@ header {
   .grid-container {
     grid-template-columns: auto;
     grid-gap: 10px 10px;
+    justify-content: center;
   }
 
   .grid-container-1 {
     grid-template-columns: auto;
-    grid-gap: 10px 10px;
+    /* gap: 1rem; */
   }
 
     .grid-container-footer {
@@ -362,8 +370,38 @@ header {
   .card-1 {
     margin-top: 1rem;
   }
-  .projectPhotos ._a {
-    width: 300px;
-    height: 100px;
+}
+
+@media only screen and (min-width: 1900px) {
+
+  .grid-container {
+    display: grid;
+      /* grid-template-columns: auto auto auto; */
+    max-width: 1900px;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+
+    /* grid-template-columns: auto;
+    grid-gap: 10px 10px;
+    justify-content: center; */
+  }
+
+    .grid-container-footer {
+    /* grid-template-columns: auto;
+    grid-gap: 10px 10px; */
+    padding: 0px;
+        max-width: 1900px;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+  }
+
+  .card {
+    /* margin-bottom: 2rem; */
+  }
+
+  .card-1 {
+    /* margin-top: 1rem; */
   }
 }
